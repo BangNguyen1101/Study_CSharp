@@ -1,7 +1,7 @@
 ﻿using System.Net.Cache;
 using System.Threading.Channels;
-
-public class Lecture
+namespace VariablesAndDataTypes;
+public class Program
 {
     public static void Main(string[] args)
     {
