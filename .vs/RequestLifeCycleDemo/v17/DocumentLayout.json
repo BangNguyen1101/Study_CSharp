@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|c:\\users\\admin\\desktop\\study_csharp\\requestlifecycledemo\\requestlifecycledemo\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|solutionrelative:requestlifecycledemo\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|c:\\users\\admin\\desktop\\study_csharp\\requestlifecycledemo\\requestlifecycledemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|solutionrelative:requestlifecycledemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|c:\\users\\admin\\desktop\\study_csharp\\requestlifecycledemo\\requestlifecycledemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|solutionrelative:requestlifecycledemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|c:\\users\\admin\\desktop\\study_csharp\\requestlifecycledemo\\requestlifecycledemo\\filter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B37D64B7-E12B-4368-93E6-9E703F2CAC2F}|RequestLifeCycleDemo\\RequestLifeCycleDemo.csproj|solutionrelative:requestlifecycledemo\\filter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "RequestLifeCycleDemo\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\appsettings.json",
+              "RelativeToolTip": "RequestLifeCycleDemo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-13T04:17:35.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "RequestLifeCycleDemo\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\Controllers\\TestController.cs",
+              "RelativeToolTip": "RequestLifeCycleDemo\\Controllers\\TestController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T01:57:20.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Filter.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\Filter.cs",
+              "RelativeDocumentMoniker": "RequestLifeCycleDemo\\Filter.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\Filter.cs",
+              "RelativeToolTip": "RequestLifeCycleDemo\\Filter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T01:55:32.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\Program.cs",
+              "RelativeDocumentMoniker": "RequestLifeCycleDemo\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Study_CSharp\\RequestLifeCycleDemo\\RequestLifeCycleDemo\\Program.cs",
+              "RelativeToolTip": "RequestLifeCycleDemo\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T01:54:44.012Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

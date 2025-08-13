@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wtE6Hht2T4SSuldo4aHXuTtFjAsvmTcyqi/lNAu6eCs=",
+  "Source": "RequestLifeCycleDemo",
+  "BasePath": "_content/RequestLifeCycleDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
