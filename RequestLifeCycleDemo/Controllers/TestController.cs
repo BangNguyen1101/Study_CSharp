@@ -1,50 +1,93 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using RequestLifeCycleDemo.Models;
 using System;
 
-namespace RequestLifeCycleDemo.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class ProductsController : ControllerBase
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class TestController : ControllerBase
+    private readonly TestProductDbContext _context;
+
+    public ProductsController(TestProductDbContext context)
     {
-        // GET: /test/success
-        [HttpGet("success")]
-        public IActionResult Success()
+        _context = context;
+    }
+
+    // GET: api/products
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+    {
+        return await _context.Products.ToListAsync();
+    }
+
+    // GET: api/products/5
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Product>> GetProduct(int id)
+    {
+        var product = await _context.Products.FindAsync(id);
+
+        if (product == null)
         {
-            Console.WriteLine("Controller: Success action running");
-            return Ok(new { message = "Hello from API" });
+            return NotFound();
         }
 
-        // GET: /test/error
-        [HttpGet("error")]
-        public IActionResult Error()
+        return product;
+    }
+
+    // POST: api/products
+    [HttpPost]
+    public async Task<ActionResult<Product>> PostProduct(Product product)
+    {
+        _context.Products.Add(product);
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
+    }
+
+    // PUT: api/products/5
+    [HttpPut("{id}")]
+    public async Task<IActionResult> PutProduct(int id, Product product)
+    {
+        if (id != product.Id)
         {
-            Console.WriteLine("Controller: Error action running");
-            throw new Exception("Something went wrong!");
+            return BadRequest();
         }
 
-        // POST: /test
-        [HttpPost]
-        public IActionResult Create([FromBody] object data)
+        _context.Entry(product).State = EntityState.Modified;
+
+        try
         {
-            Console.WriteLine("Controller: Create action running");
-            return Ok(new { message = "Created successfully", data });
+            await _context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!_context.Products.Any(e => e.Id == id))
+            {
+                return NotFound();
+            }
+            else
+            {
+                throw;
+            }
         }
 
-        // PUT: /test/{id}
-        [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] object data)
+        return NoContent();
+    }
+
+    // DELETE: api/products/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteProduct(int id)
+    {
+        var product = await _context.Products.FindAsync(id);
+        if (product == null)
         {
-            Console.WriteLine("Controller: Update action running");
-            return Ok(new { message = $"Updated item {id}", data });
+            return NotFound();
         }
 
-        // DELETE: /test/{id}
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            Console.WriteLine("Controller: Delete action running");
-            return Ok(new { message = $"Deleted item {id}" });
-        }
+        _context.Products.Remove(product);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
     }
 }

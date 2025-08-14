@@ -1,12 +1,15 @@
 ﻿using RequestLifeCycleDemo;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using RequestLifeCycleDemo.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // ================= Cấu hình Swagger + Token =================
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "RequestLifeCycleDemo", Version = "v1" });
+   
 
     // Cấu hình nhập Authorization: Bearer token
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -55,12 +58,15 @@ builder.Services.AddControllers(options =>
 });
 
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddDbContext<TestProductDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
 // ================= Pipeline =================
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
 }

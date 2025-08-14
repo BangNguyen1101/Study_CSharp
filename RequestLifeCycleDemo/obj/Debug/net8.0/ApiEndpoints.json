@@ -1,24 +1,80 @@
 [
   {
-    "ContainingType": "RequestLifeCycleDemo.Controllers.TestController",
-    "Method": "Create",
-    "RelativePath": "Test",
+    "ContainingType": "ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "api/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RequestLifeCycleDemo.Models.Product, RequestLifeCycleDemo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductsController",
+    "Method": "PostProduct",
+    "RelativePath": "api/Products",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "data",
-        "Type": "System.Object",
+        "Name": "product",
+        "Type": "RequestLifeCycleDemo.Models.Product",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "RequestLifeCycleDemo.Models.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "RequestLifeCycleDemo.Controllers.TestController",
-    "Method": "Update",
-    "RelativePath": "Test/{id}",
+    "ContainingType": "ProductsController",
+    "Method": "GetProduct",
+    "RelativePath": "api/Products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RequestLifeCycleDemo.Models.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProductsController",
+    "Method": "PutProduct",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -29,17 +85,17 @@
         "IsRequired": true
       },
       {
-        "Name": "data",
-        "Type": "System.Object",
+        "Name": "product",
+        "Type": "RequestLifeCycleDemo.Models.Product",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RequestLifeCycleDemo.Controllers.TestController",
-    "Method": "Delete",
-    "RelativePath": "Test/{id}",
+    "ContainingType": "ProductsController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/Products/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -50,26 +106,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "RequestLifeCycleDemo.Controllers.TestController",
-    "Method": "Error",
-    "RelativePath": "Test/error",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "RequestLifeCycleDemo.Controllers.TestController",
-    "Method": "Success",
-    "RelativePath": "Test/success",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   }
 ]
